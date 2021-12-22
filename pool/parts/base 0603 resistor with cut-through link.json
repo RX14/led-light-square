@@ -1,0 +1,47 @@
+{
+    "MPN": [
+        false,
+        "base 0603 resistor with cut-through link"
+    ],
+    "datasheet": [
+        false,
+        ""
+    ],
+    "description": [
+        false,
+        ""
+    ],
+    "entity": "3d97aee2-a176-4b82-9604-14a6c1238367",
+    "flags": {
+        "base_part": "set",
+        "exclude_bom": "clear",
+        "exclude_pnp": "clear"
+    },
+    "inherit_model": false,
+    "inherit_tags": false,
+    "manufacturer": [
+        false,
+        ""
+    ],
+    "model": "96c366ee-a963-41a0-9cc8-54c646979695",
+    "package": "8c0bc0fe-590d-48c2-82a9-944d8d5019f1",
+    "pad_map": {
+        "63256dd2-2eab-46fe-9201-b2e553476e98": {
+            "gate": "48af78e5-730e-44eb-977a-cf188e4fcb39",
+            "pin": "6a44037c-65e2-4876-9359-42890048841d"
+        },
+        "6dd73a26-6e83-43b6-8317-09836acef67d": {
+            "gate": "48af78e5-730e-44eb-977a-cf188e4fcb39",
+            "pin": "dda0ec99-5d70-4fbe-a8db-897542e7554e"
+        }
+    },
+    "parametric": {},
+    "tags": [],
+    "type": "part",
+    "uuid": "1365238a-5721-4c57-abf2-d32f3858dd4d",
+    "value": [
+        false,
+        ""
+    ],
+    "version": 1
+}

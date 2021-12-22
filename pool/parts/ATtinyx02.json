@@ -1,0 +1,65 @@
+{
+    "MPN": [
+        false,
+        "ATtinyx02"
+    ],
+    "datasheet": [
+        false,
+        "https://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny202-204-402-404-406-DataSheet-DS40002318A.pdf"
+    ],
+    "description": [
+        false,
+        "tinyAVR® 0-series, 8-pin"
+    ],
+    "entity": "02a072e0-dc55-4d30-abe6-9c01ad43dd48",
+    "inherit_model": false,
+    "inherit_tags": false,
+    "manufacturer": [
+        false,
+        "Microchip"
+    ],
+    "model": "b99785a3-c0da-4658-969d-6287cec3be05",
+    "package": "0932e22e-0cf7-46dc-b09c-4cc761a67608",
+    "pad_map": {
+        "17341892-a120-44e2-97ea-6e4f8e3d7da5": {
+            "gate": "3cb0e95d-fac4-4527-8dee-20ce1c02c59f",
+            "pin": "85c1112a-b8a3-43ec-a9e6-052d064b5e14"
+        },
+        "29f18ab8-6cea-44fc-9bf5-4fb888f5245b": {
+            "gate": "3cb0e95d-fac4-4527-8dee-20ce1c02c59f",
+            "pin": "10cd8ffd-9b91-43e0-a22b-42a90c5bbde0"
+        },
+        "3d725e25-0d60-46cb-a21f-82462d3ce156": {
+            "gate": "3cb0e95d-fac4-4527-8dee-20ce1c02c59f",
+            "pin": "43b8c314-3877-48eb-b1e8-2a4abf422ec6"
+        },
+        "51d7c05f-acae-46d5-9c26-2ea9d17bf7a8": {
+            "gate": "3cb0e95d-fac4-4527-8dee-20ce1c02c59f",
+            "pin": "9d4fb2f0-57ab-4b2a-9a2b-12091e5e889c"
+        },
+        "68b17b6f-ab52-4c2b-9389-c36d3c06eeef": {
+            "gate": "3cb0e95d-fac4-4527-8dee-20ce1c02c59f",
+            "pin": "3254ca24-3165-44df-a437-f7460a20f730"
+        },
+        "6f82c7c4-9578-4cb0-a92c-8b09534d5dc9": {
+            "gate": "3cb0e95d-fac4-4527-8dee-20ce1c02c59f",
+            "pin": "27661661-ff92-46f8-b28c-eff7fd4ee116"
+        },
+        "82d773fb-4473-4bd9-a879-a6ca2756055c": {
+            "gate": "3cb0e95d-fac4-4527-8dee-20ce1c02c59f",
+            "pin": "381ddf14-c269-49f0-8932-4311206ffccd"
+        },
+        "b9ad4acf-f78d-438d-8b7b-e83ee0f9cc19": {
+            "gate": "3cb0e95d-fac4-4527-8dee-20ce1c02c59f",
+            "pin": "46d035c7-3fa3-46e5-a210-b4d757addb75"
+        }
+    },
+    "parametric": {},
+    "tags": [],
+    "type": "part",
+    "uuid": "83b29300-14b5-4dee-b6f0-ba0505396e74",
+    "value": [
+        false,
+        ""
+    ]
+}

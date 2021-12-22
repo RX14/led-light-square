@@ -1,0 +1,100 @@
+{
+    "manufacturer": "Microchip",
+    "name": "ATtinyx02",
+    "pins": {
+        "10cd8ffd-9b91-43e0-a22b-42a90c5bbde0": {
+            "direction": "bidirectional",
+            "names": [
+                "AIN1",
+                "TXD",
+                "MOSI",
+                "SDA",
+                "WO1",
+                "LUT0-IN1"
+            ],
+            "primary_name": "PA1",
+            "swap_group": 0
+        },
+        "27661661-ff92-46f8-b28c-eff7fd4ee116": {
+            "direction": "bidirectional",
+            "names": [
+                "EVOUT0",
+                "AIN2",
+                "RXD",
+                "MISO",
+                "SCL",
+                "WO2",
+                "LUT0-IN2"
+            ],
+            "primary_name": "PA2",
+            "swap_group": 0
+        },
+        "3254ca24-3165-44df-a437-f7460a20f730": {
+            "direction": "bidirectional",
+            "names": [
+                "AIN7",
+                "AINP0",
+                "RXD",
+                "MISO",
+                "WO0",
+                "LUT1-OUT"
+            ],
+            "primary_name": "PA7",
+            "swap_group": 0
+        },
+        "381ddf14-c269-49f0-8932-4311206ffccd": {
+            "direction": "bidirectional",
+            "names": [
+                "~RESET",
+                "UPDI",
+                "AIN0",
+                "XDIR",
+                "~SS",
+                "LUT0-IN0"
+            ],
+            "primary_name": "PA0",
+            "swap_group": 0
+        },
+        "43b8c314-3877-48eb-b1e8-2a4abf422ec6": {
+            "direction": "bidirectional",
+            "names": [
+                "EXTCLK",
+                "AIN3",
+                "AC0-OUT",
+                "XCK",
+                "SCK",
+                "WO0",
+                "WO3"
+            ],
+            "primary_name": "PA3",
+            "swap_group": 0
+        },
+        "46d035c7-3fa3-46e5-a210-b4d757addb75": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "GND",
+            "swap_group": 0
+        },
+        "85c1112a-b8a3-43ec-a9e6-052d064b5e14": {
+            "direction": "bidirectional",
+            "names": [
+                "AIN6",
+                "AINN0",
+                "TXD",
+                "MOSI",
+                "WO",
+                "LUT0-OUT"
+            ],
+            "primary_name": "PA6",
+            "swap_group": 0
+        },
+        "9d4fb2f0-57ab-4b2a-9a2b-12091e5e889c": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "VDD",
+            "swap_group": 0
+        }
+    },
+    "type": "unit",
+    "uuid": "7827d2e2-dd06-4f7d-8632-40afd52856c7"
+}

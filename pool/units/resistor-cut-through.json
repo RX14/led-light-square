@@ -1,0 +1,20 @@
+{
+    "manufacturer": "",
+    "name": "Two-terminal resistor with cut-through link",
+    "pins": {
+        "6a44037c-65e2-4876-9359-42890048841d": {
+            "direction": "passive",
+            "names": [],
+            "primary_name": "A",
+            "swap_group": 1
+        },
+        "dda0ec99-5d70-4fbe-a8db-897542e7554e": {
+            "direction": "passive",
+            "names": [],
+            "primary_name": "B",
+            "swap_group": 1
+        }
+    },
+    "type": "unit",
+    "uuid": "3f3788d1-cbf0-450d-a601-a5f14531158c"
+}

@@ -1,0 +1,30 @@
+{
+    "MPN": [
+        false,
+        "ATtiny202"
+    ],
+    "base": "83b29300-14b5-4dee-b6f0-ba0505396e74",
+    "datasheet": [
+        true,
+        "https://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny202-204-402-404-406-DataSheet-DS40002318A.pdf"
+    ],
+    "description": [
+        false,
+        "tinyAVR® 0-series, 8-pin, 2KiB Flash"
+    ],
+    "inherit_model": true,
+    "inherit_tags": true,
+    "manufacturer": [
+        true,
+        "Microchip"
+    ],
+    "model": "b99785a3-c0da-4658-969d-6287cec3be05",
+    "parametric": {},
+    "tags": [],
+    "type": "part",
+    "uuid": "0a911ad5-ef11-4715-8ec8-ebdb96014bf4",
+    "value": [
+        true,
+        "ATtinyx02"
+    ]
+}

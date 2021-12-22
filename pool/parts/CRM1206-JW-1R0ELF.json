@@ -1,0 +1,35 @@
+{
+    "MPN": [
+        false,
+        "CRM1206-JW-1R0ELF"
+    ],
+    "base": "69d9d487-801a-40ab-a821-5a7a6ee8c623",
+    "datasheet": [
+        true,
+        ""
+    ],
+    "description": [
+        false,
+        "Current Sense Resistor, 1 Ω, 5%, 0.5 W, 200ppm/K"
+    ],
+    "inherit_model": true,
+    "inherit_tags": true,
+    "manufacturer": [
+        false,
+        "Bourns"
+    ],
+    "model": "96c366ee-a963-41a0-9cc8-54c646979695",
+    "parametric": {
+        "pmax": "0.5",
+        "table": "resistors",
+        "tolerance": "5",
+        "value": "1"
+    },
+    "tags": [],
+    "type": "part",
+    "uuid": "5841a71b-3512-48a9-bddc-c9249c17a7e0",
+    "value": [
+        false,
+        "1 Ω"
+    ]
+}

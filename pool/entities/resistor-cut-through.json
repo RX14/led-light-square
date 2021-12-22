@@ -1,0 +1,20 @@
+{
+    "gates": {
+        "48af78e5-730e-44eb-977a-cf188e4fcb39": {
+            "name": "Main",
+            "suffix": "",
+            "swap_group": 0,
+            "unit": "3f3788d1-cbf0-450d-a601-a5f14531158c"
+        }
+    },
+    "manufacturer": "",
+    "name": "Two-terminal resistor with cut-through link",
+    "prefix": "R",
+    "tags": [
+        "generic",
+        "passive",
+        "resistor"
+    ],
+    "type": "entity",
+    "uuid": "3d97aee2-a176-4b82-9604-14a6c1238367"
+}

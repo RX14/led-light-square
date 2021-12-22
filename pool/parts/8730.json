@@ -1,0 +1,37 @@
+{
+    "MPN": [
+        false,
+        "8730"
+    ],
+    "datasheet": [
+        false,
+        ""
+    ],
+    "description": [
+        false,
+        "Miniature Binding Post"
+    ],
+    "entity": "267343bf-e6bf-42f4-b256-381dd96f011d",
+    "inherit_model": false,
+    "inherit_tags": false,
+    "manufacturer": [
+        false,
+        "Keystone"
+    ],
+    "model": "00000000-0000-0000-0000-000000000000",
+    "package": "1e7ce725-10d7-4ee5-8517-a10d3e1e6045",
+    "pad_map": {
+        "a93cd2fe-e272-476c-8c63-0879df02d447": {
+            "gate": "26c95be6-8813-4f4b-a0e6-574ae9a6ae48",
+            "pin": "ad3f20fe-d1ca-40c1-9148-71c107694c90"
+        }
+    },
+    "parametric": {},
+    "tags": [],
+    "type": "part",
+    "uuid": "531b9b05-abdd-4297-951d-2779f22fd520",
+    "value": [
+        false,
+        ""
+    ]
+}

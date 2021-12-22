@@ -1,0 +1,33 @@
+{
+    "MPN": [
+        false,
+        "BCP56-10H"
+    ],
+    "base": "93ea47fc-1073-4bfa-be9c-25f134397b98",
+    "datasheet": [
+        false,
+        "https://assets.nexperia.com/documents/data-sheet/BCP56H_SER.pdf"
+    ],
+    "description": [
+        false,
+        "80 V, 1 A NPN medium power transistor"
+    ],
+    "inherit_model": true,
+    "inherit_tags": true,
+    "manufacturer": [
+        false,
+        "Nexperia"
+    ],
+    "model": "1c4377f2-2789-4b2c-b94b-c08645583d2e",
+    "orderable_MPNs": {
+        "fe96e712-cf69-4799-9170-6ac707bed5dd": "BCP56-10HX"
+    },
+    "parametric": {},
+    "tags": [],
+    "type": "part",
+    "uuid": "af8d3992-bfb1-408b-a7f6-fbf414a77b7d",
+    "value": [
+        true,
+        "base SOT-223 NPN transistor"
+    ]
+}

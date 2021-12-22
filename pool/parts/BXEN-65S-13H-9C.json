@@ -1,0 +1,33 @@
+{
+    "MPN": [
+        false,
+        "BXEN-65S-13H-9C"
+    ],
+    "base": "ff15b2d8-38b0-42e9-89a2-fd8eb3137fad",
+    "datasheet": [
+        true,
+        "https://www.bridgelux.com/sites/default/files/resource_media/Bridgelux%20DS310%20SMD%202835%201W%209V%20Thrive%20Data%20Sheet%2020191006%20Rev%20A_0.pdf"
+    ],
+    "description": [
+        false,
+        "Thrive High CRI LED, 9V, 6500K"
+    ],
+    "inherit_model": true,
+    "inherit_tags": true,
+    "manufacturer": [
+        true,
+        "Bridgelux"
+    ],
+    "model": "00000000-0000-0000-0000-000000000000",
+    "orderable_MPNs": {
+        "29b2b777-864c-4c91-bbeb-d82f74a6e733": "BXEN-65S-13H-9C-00-0-0"
+    },
+    "parametric": {},
+    "tags": [],
+    "type": "part",
+    "uuid": "d8df2d3b-bf41-4197-8e61-008a3b9d84ba",
+    "value": [
+        true,
+        "BXEN-xxS-13H-9C"
+    ]
+}
