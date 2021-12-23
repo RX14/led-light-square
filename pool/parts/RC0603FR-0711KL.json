@@ -1,0 +1,35 @@
+{
+    "MPN": [
+        false,
+        "RC0603FR-0711KL"
+    ],
+    "base": "f09213fb-baf4-4285-ab94-46fe3ca9ec7a",
+    "datasheet": [
+        true,
+        "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf"
+    ],
+    "description": [
+        true,
+        "General Purpose Chip resistor"
+    ],
+    "inherit_model": true,
+    "inherit_tags": true,
+    "manufacturer": [
+        true,
+        "Yageo"
+    ],
+    "model": "96c366ee-a963-41a0-9cc8-54c646979695",
+    "parametric": {
+        "pmax": "0.1",
+        "table": "resistors",
+        "tolerance": "1",
+        "value": "11000"
+    },
+    "tags": [],
+    "type": "part",
+    "uuid": "6291e8fe-d498-4996-9bf5-93657dd43525",
+    "value": [
+        false,
+        "11 kΩ"
+    ]
+}

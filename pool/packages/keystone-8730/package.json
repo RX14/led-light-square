@@ -274,7 +274,42 @@
         }
     },
     "tags": [],
-    "texts": {},
+    "texts": {
+        "3f53ea16-f136-46e1-967e-12c38306b01f": {
+            "font": "simplex",
+            "from_smash": false,
+            "layer": 50,
+            "origin": "center",
+            "placement": {
+                "angle": 0,
+                "mirror": false,
+                "shift": [
+                    -1800000,
+                    0
+                ]
+            },
+            "size": 700000,
+            "text": "$RD",
+            "width": 0
+        },
+        "5e5db4f0-1fb8-479f-a5dd-f65933065714": {
+            "font": "simplex",
+            "from_smash": false,
+            "layer": 20,
+            "origin": "center",
+            "placement": {
+                "angle": 0,
+                "mirror": false,
+                "shift": [
+                    -2000000,
+                    3500000
+                ]
+            },
+            "size": 1000000,
+            "text": "$RD",
+            "width": 150000
+        }
+    },
     "type": "package",
     "uuid": "1e7ce725-10d7-4ee5-8517-a10d3e1e6045"
 }
