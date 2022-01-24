@@ -1,0 +1,51 @@
+{
+    "MPN": [
+        false,
+        "ES10S001JF1"
+    ],
+    "datasheet": [
+        false,
+        "https://www.jae.com/direct/topics/topics_file_download/topics_id=64279&ext_no=08&_lang=en&v=202104081416564023609"
+    ],
+    "description": [
+        false,
+        "Single Wire Insert-in Type Connector with No insulator"
+    ],
+    "entity": "267343bf-e6bf-42f4-b256-381dd96f011d",
+    "inherit_model": false,
+    "inherit_tags": false,
+    "manufacturer": [
+        false,
+        "JAE"
+    ],
+    "model": "00000000-0000-0000-0000-000000000000",
+    "orderable_MPNs": {
+        "ae6add73-c251-495e-abaa-0a0694b44c7d": "ES10S001JF1R4500"
+    },
+    "package": "cc06ae1b-4948-4959-96df-d340913778e0",
+    "pad_map": {
+        "079e0ca2-0b03-4d37-850f-a7b198085f94": {
+            "gate": "26c95be6-8813-4f4b-a0e6-574ae9a6ae48",
+            "pin": "ad3f20fe-d1ca-40c1-9148-71c107694c90"
+        },
+        "3d327b3f-cebc-4cbc-a7d5-159e0cb74dac": {
+            "gate": "26c95be6-8813-4f4b-a0e6-574ae9a6ae48",
+            "pin": "ad3f20fe-d1ca-40c1-9148-71c107694c90"
+        },
+        "f28a1e5b-da49-4168-93ab-785c6d4b1115": {
+            "gate": "26c95be6-8813-4f4b-a0e6-574ae9a6ae48",
+            "pin": "ad3f20fe-d1ca-40c1-9148-71c107694c90"
+        }
+    },
+    "parametric": {},
+    "tags": [
+        "connector",
+        "smd"
+    ],
+    "type": "part",
+    "uuid": "b441c2a1-4d5f-4a03-95de-170c554aaa9c",
+    "value": [
+        false,
+        ""
+    ]
+}
