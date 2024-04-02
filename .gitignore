@@ -4,3 +4,4 @@ pool/*.db-*
 *.autosave
 *.bak
 /out/
+/planes.json
