@@ -4603,7 +4603,7 @@
                 },
                 "7df71272-dcf0-4839-bb2e-2af4a8648b9d": {
                     "component": "fb03c91a-ab3a-4b85-95b6-ee05420e810a",
-                    "custom_value": "Vled/1mA\n(${value})",
+                    "custom_value": "Vled/4mA\n(${value})",
                     "display_all_pads": false,
                     "display_directions": false,
                     "expand": 0,
@@ -4662,7 +4662,7 @@
                 },
                 "8a93e3ac-e3c4-4806-b058-855c1032749f": {
                     "component": "04f2d586-2ac1-4701-9b50-ab790a5f1d12",
-                    "custom_value": "Vled/1mA\n(${value})",
+                    "custom_value": "Vled/4mA\n(${value})",
                     "display_all_pads": false,
                     "display_directions": false,
                     "expand": 0,
@@ -5619,7 +5619,7 @@
                         ]
                     },
                     "size": 1500000,
-                    "text": "1mA ->\nbias sense > 1mV\nfor low-end accuracy\navoid Vos issues",
+                    "text": "4mA ->\nbias sense > 4mV\nfor low-end accuracy\navoid Vos issues",
                     "width": 0
                 },
                 "76c8a6b7-30b0-4134-872f-bed4c0bf2583": {
@@ -5653,7 +5653,7 @@
                         ]
                     },
                     "size": 1500000,
-                    "text": "1mA ->\nbias sense > 1mV\nfor low-end accuracy\navoid Vos issues",
+                    "text": "4mA ->\nbias sense > 4mV\nfor low-end accuracy\navoid Vos issues",
                     "width": 0
                 },
                 "a04aa0b4-1805-4585-a707-c59e2693a577": {
