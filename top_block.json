@@ -164,10 +164,11 @@
                     "custom_direction": "bidirectional",
                     "custom_name": "",
                     "pin_names": [
+                        "49ffcb91-4c83-5896-aecd-31f34e7118d6",
                         "bb4bb488-8cd0-5079-9672-764ea34a5f1a"
                     ],
                     "use_custom_name": false,
-                    "use_primary_name": true
+                    "use_primary_name": false
                 },
                 "3cb0e95d-fac4-4527-8dee-20ce1c02c59f/43b8c314-3877-48eb-b1e8-2a4abf422ec6": {
                     "custom_direction": "bidirectional",
@@ -181,11 +182,9 @@
                 "3cb0e95d-fac4-4527-8dee-20ce1c02c59f/85c1112a-b8a3-43ec-a9e6-052d064b5e14": {
                     "custom_direction": "bidirectional",
                     "custom_name": "",
-                    "pin_names": [
-                        "9251d5a5-6c95-552f-b241-a22c61860edf"
-                    ],
+                    "pin_names": [],
                     "use_custom_name": false,
-                    "use_primary_name": false
+                    "use_primary_name": true
                 }
             },
             "connections": {
