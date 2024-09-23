@@ -1,6 +1,6 @@
 {
     "arcs": {},
-    "default_model": "00000000-0000-0000-0000-000000000000",
+    "default_model": "596e46a0-a801-4daa-b961-d3e19dcfae76",
     "dimensions": {},
     "grid_settings": {
         "current": {
@@ -66,7 +66,17 @@
         }
     },
     "manufacturer": "",
-    "models": {},
+    "models": {
+        "596e46a0-a801-4daa-b961-d3e19dcfae76": {
+            "filename": "3d_models/LED 2835.stp",
+            "pitch": 0,
+            "roll": 0,
+            "x": 1750000,
+            "y": 1400000,
+            "yaw": 32768,
+            "z": -3140
+        }
+    },
     "name": "LED 2835",
     "pads": {
         "5464b95d-8b39-4a64-a57e-7888bb411d05": {

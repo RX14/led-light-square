@@ -1,7 +1,7 @@
 {
     "alternate_for": "a67bb5be-5846-436c-9b76-a3a5b3e4df12",
     "arcs": {},
-    "default_model": "00000000-0000-0000-0000-000000000000",
+    "default_model": "1b4e6d52-78e4-4020-907d-4c055665c351",
     "dimensions": {},
     "grid_settings": {
         "current": {
@@ -67,7 +67,17 @@
         }
     },
     "manufacturer": "",
-    "models": {},
+    "models": {
+        "1b4e6d52-78e4-4020-907d-4c055665c351": {
+            "filename": "3d_models/LED 2835.stp",
+            "pitch": 0,
+            "roll": 0,
+            "x": 1750000,
+            "y": 1400000,
+            "yaw": 32768,
+            "z": 0
+        }
+    },
     "name": "LED 2835 (hand soldering)",
     "pads": {
         "5464b95d-8b39-4a64-a57e-7888bb411d05": {

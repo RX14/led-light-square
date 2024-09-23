@@ -9101,7 +9101,7 @@
         }
     },
     "step_export_settings": {
-        "filename": "",
+        "filename": "/tmp/led-light-square.step",
         "include_3d_models": true,
         "prefix": ""
     },
