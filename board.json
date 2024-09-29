@@ -7316,48 +7316,96 @@
             "vertices": [
                 {
                     "arc_center": [
-                        -45000000,
-                        -45000000
+                        -48000000,
+                        -48000000
                     ],
-                    "arc_reverse": false,
+                    "arc_reverse": true,
                     "position": [
-                        -50000000,
+                        -48000000,
                         -50000000
                     ],
-                    "type": "line"
+                    "type": "arc"
                 },
                 {
                     "arc_center": [
-                        -45000000,
-                        45000000
+                        0,
+                        0
                     ],
                     "arc_reverse": false,
                     "position": [
                         -50000000,
+                        -48000000
+                    ],
+                    "type": "line"
+                },
+                {
+                    "arc_center": [
+                        -48000000,
+                        48000000
+                    ],
+                    "arc_reverse": true,
+                    "position": [
+                        -50000000,
+                        48000000
+                    ],
+                    "type": "arc"
+                },
+                {
+                    "arc_center": [
+                        0,
+                        0
+                    ],
+                    "arc_reverse": false,
+                    "position": [
+                        -48000000,
                         50000000
                     ],
                     "type": "line"
                 },
                 {
                     "arc_center": [
-                        45000000,
-                        45000000
+                        48000000,
+                        48000000
+                    ],
+                    "arc_reverse": true,
+                    "position": [
+                        48000000,
+                        50000000
+                    ],
+                    "type": "arc"
+                },
+                {
+                    "arc_center": [
+                        0,
+                        0
                     ],
                     "arc_reverse": false,
                     "position": [
                         50000000,
-                        50000000
+                        48000000
                     ],
                     "type": "line"
                 },
                 {
                     "arc_center": [
-                        45000000,
-                        -45000000
+                        48000000,
+                        -48000000
+                    ],
+                    "arc_reverse": true,
+                    "position": [
+                        50000000,
+                        -48000000
+                    ],
+                    "type": "arc"
+                },
+                {
+                    "arc_center": [
+                        0,
+                        0
                     ],
                     "arc_reverse": false,
                     "position": [
-                        50000000,
+                        48000000,
                         -50000000
                     ],
                     "type": "line"
