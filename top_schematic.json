@@ -3834,6 +3834,7 @@
             "symbols": {
                 "01cc333d-64c7-48f9-bb23-0e4ad2488afa": {
                     "component": "3c43cbad-7894-4058-be7c-762057af05e8",
+                    "custom_value": "> 1µF\n@ 48V",
                     "display_all_pads": false,
                     "display_directions": false,
                     "expand": 0,
@@ -3847,11 +3848,9 @@
                             170000000
                         ]
                     },
-                    "smashed": true,
+                    "smashed": false,
                     "symbol": "1f176305-dbe6-4349-a3c0-fe0927faaec4",
-                    "texts": [
-                        "e04552ee-ff03-4397-8d2c-eab386d80420"
-                    ]
+                    "texts": []
                 },
                 "030f1669-6037-4355-b0f1-f4491ac1d550": {
                     "component": "8288a43d-0e8a-439b-96fa-2200d03d26d7",
@@ -5724,23 +5723,6 @@
                     "text": "Sallen-Key Bessel PWM filter designed\nfor 10Hz cutoff frequency\n\nValues from TI filter design tool",
                     "width": 0
                 },
-                "e04552ee-ff03-4397-8d2c-eab386d80420": {
-                    "font": "simplex",
-                    "from_smash": true,
-                    "layer": 0,
-                    "origin": "center",
-                    "placement": {
-                        "angle": 0,
-                        "mirror": false,
-                        "shift": [
-                            62500000,
-                            172500000
-                        ]
-                    },
-                    "size": 1500000,
-                    "text": "$REFDES",
-                    "width": 0
-                },
                 "e33c25dc-99c8-48d9-809e-16acebf1d960": {
                     "font": "simplex",
                     "from_smash": false,
@@ -5756,6 +5738,23 @@
                     },
                     "size": 1500000,
                     "text": "LEDs",
+                    "width": 0
+                },
+                "efcaf261-6773-479c-8914-bb845c4bfa46": {
+                    "font": "simplex",
+                    "from_smash": false,
+                    "layer": 0,
+                    "origin": "center",
+                    "placement": {
+                        "angle": 0,
+                        "mirror": false,
+                        "shift": [
+                            62500000,
+                            163750000
+                        ]
+                    },
+                    "size": 1500000,
+                    "text": "TODO: do I have a GRM32 in the box?",
                     "width": 0
                 },
                 "fe63643a-7f49-4d1d-99f5-c55913906dc4": {
