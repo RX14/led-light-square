@@ -1,0 +1,30 @@
+{
+    "MPN": [
+        false,
+        "AP7387-50FDC"
+    ],
+    "base": "1412bb40-fd04-4ad5-816b-e51d174065fe",
+    "datasheet": [
+        true,
+        "https://www.diodes.com/datasheet/download/AP7387.pdf"
+    ],
+    "description": [
+        false,
+        "5.0V, 150mA LDO Voltage Regulator, Wide Input Voltage Range"
+    ],
+    "inherit_model": true,
+    "inherit_tags": true,
+    "manufacturer": [
+        true,
+        "Diodes Incorporated"
+    ],
+    "model": "00000000-0000-0000-0000-000000000000",
+    "parametric": {},
+    "tags": [],
+    "type": "part",
+    "uuid": "d9d26d97-0ca9-4134-9cec-dc599295a9af",
+    "value": [
+        true,
+        "AP7387-xxFDC"
+    ]
+}

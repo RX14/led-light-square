@@ -1,0 +1,58 @@
+{
+    "MPN": [
+        false,
+        "AP7387-xxFDC"
+    ],
+    "datasheet": [
+        false,
+        "https://www.diodes.com/datasheet/download/AP7387.pdf"
+    ],
+    "description": [
+        false,
+        "150mA LDO Voltage Regulator, Wide Input Voltage Range"
+    ],
+    "entity": "1d0055e8-b654-4bb9-b3e2-5ad87079ecca",
+    "inherit_model": true,
+    "inherit_tags": false,
+    "manufacturer": [
+        false,
+        "Diodes Incorporated"
+    ],
+    "model": "00000000-0000-0000-0000-000000000000",
+    "orderable_MPNs": {
+        "1af93611-607c-439c-947c-86c8d2cd82e9": "AP7387-33FDC-7",
+        "7ab8a5cf-4b57-457b-9cca-feea7a58bc61": "AP7387-50FDC-7",
+        "873bb8bf-f6a6-45f6-b355-0f39164db3df": "AP7387-30FDC-7",
+        "a033d472-171e-4517-999c-3133c3d8130d": "AP7387-36FDC-7"
+    },
+    "package": "de836a50-eee3-4e8c-bf22-30f251f72053",
+    "pad_map": {
+        "06e6b6e7-68ff-440d-b9bd-3adf2ff84eea": {
+            "gate": "8b4c20d8-37fd-40a5-8239-db8803c0baa0",
+            "pin": "20f0495c-5e6e-4975-b440-1399ca09d3c3"
+        },
+        "6d73f2cc-ccfd-45e3-b27d-6a39f4516e8e": {
+            "gate": "8b4c20d8-37fd-40a5-8239-db8803c0baa0",
+            "pin": "559d5e91-2169-486b-9ece-8db9867957dd"
+        },
+        "b7e970e6-312a-41c3-b694-fe948a03f1a4": {
+            "gate": "8b4c20d8-37fd-40a5-8239-db8803c0baa0",
+            "pin": "304699c2-7433-4b03-ad2c-c8df631dd06f"
+        },
+        "ea1e417d-697f-4409-82a7-2e7f7f9e6a5d": {
+            "gate": "8b4c20d8-37fd-40a5-8239-db8803c0baa0",
+            "pin": "20f0495c-5e6e-4975-b440-1399ca09d3c3"
+        }
+    },
+    "parametric": {},
+    "tags": [
+        "ic",
+        "ldo"
+    ],
+    "type": "part",
+    "uuid": "1412bb40-fd04-4ad5-816b-e51d174065fe",
+    "value": [
+        false,
+        ""
+    ]
+}
