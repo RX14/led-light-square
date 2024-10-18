@@ -1,0 +1,30 @@
+{
+    "MPN": [
+        false,
+        "AP7387-33FDC"
+    ],
+    "base": "1412bb40-fd04-4ad5-816b-e51d174065fe",
+    "datasheet": [
+        true,
+        "https://www.diodes.com/datasheet/download/AP7387.pdf"
+    ],
+    "description": [
+        false,
+        "3.3V, 150mA LDO Voltage Regulator, Wide Input Voltage Range"
+    ],
+    "inherit_model": true,
+    "inherit_tags": true,
+    "manufacturer": [
+        true,
+        "Diodes Incorporated"
+    ],
+    "model": "c93fc88e-548c-491c-ae4a-17a8b26f7a63",
+    "parametric": {},
+    "tags": [],
+    "type": "part",
+    "uuid": "1517f6a4-4e21-48fb-b406-6808c58363eb",
+    "value": [
+        true,
+        "AP7387-xxFDC"
+    ]
+}

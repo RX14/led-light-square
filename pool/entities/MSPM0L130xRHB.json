@@ -1,0 +1,19 @@
+{
+    "gates": {
+        "da464dd4-d956-4bb6-b9dd-bad0f46e6adf": {
+            "name": "Main",
+            "suffix": "",
+            "swap_group": 0,
+            "unit": "e902aa6f-e680-4cdf-b041-62bcdc33a5b6"
+        }
+    },
+    "manufacturer": "Texas Instruments",
+    "name": "MSPM0L130xRHB",
+    "prefix": "U",
+    "tags": [
+        "arm",
+        "mcu"
+    ],
+    "type": "entity",
+    "uuid": "dcb81ee9-fd3c-4810-b64e-09cb75c6c39f"
+}

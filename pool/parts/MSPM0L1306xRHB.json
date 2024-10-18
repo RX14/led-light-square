@@ -1,0 +1,38 @@
+{
+    "MPN": [
+        false,
+        "MSPM0L1306xRHB"
+    ],
+    "base": "94a9892c-66ad-4a17-aebf-2fc4acaaee49",
+    "datasheet": [
+        true,
+        "https://www.ti.com/lit/gpn/mspm0l1305"
+    ],
+    "description": [
+        false,
+        "32-MHz Arm® Cortex®-M0+ MCU with 64-KB flash, 4-KB SRAM, 12-bit ADC, comparator, OPA"
+    ],
+    "inherit_model": true,
+    "inherit_tags": true,
+    "manufacturer": [
+        true,
+        "Texas Instruments"
+    ],
+    "model": "dad1bb6c-6266-4e11-9191-7d9932c34768",
+    "orderable_MPNs": {
+        "430f16c6-2156-46a7-b313-6a35a94466c0": "MSPM0L1306SRHBT",
+        "6b3a8d96-9856-4d3d-9a71-78a303298b4b": "MSPM0L1306SRHB",
+        "ac3397ad-1853-454f-b611-79c05c144652": "MSPM0L1306TRHB",
+        "ca141e15-9b63-470a-bd0e-94e81782fe4c": "MSPM0L1306TRHBR",
+        "e21a827b-61fc-49e2-8114-227e70748720": "MSPM0L1306TRHBT",
+        "ff5aef54-faa1-4372-b0d2-42a8d3ff1346": "MSPM0L1306SRHBR"
+    },
+    "parametric": {},
+    "tags": [],
+    "type": "part",
+    "uuid": "69bfddd4-d056-4861-b981-412442f5cfca",
+    "value": [
+        true,
+        "MSPM0L130xRHB"
+    ]
+}
