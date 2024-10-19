@@ -1524,6 +1524,20 @@
                         "port": null
                     }
                 },
+                "0915fca3-68e8-462b-aac7-a4996605e4a4": {
+                    "from": {
+                        "bus_ripper": null,
+                        "junc": null,
+                        "pin": "5cd44956-605e-483c-b416-4029cc864e4d/28d9863d-b247-48d4-8dee-18a693950662",
+                        "port": null
+                    },
+                    "to": {
+                        "bus_ripper": null,
+                        "junc": null,
+                        "pin": "6e4724f3-135f-4113-8040-1813ef7bb9f2/2fffaa24-00b6-4f8f-a6c0-f808a499d524",
+                        "port": null
+                    }
+                },
                 "09a0376b-305c-4294-9fce-cf88465cae30": {
                     "from": {
                         "bus_ripper": null,
@@ -2697,6 +2711,20 @@
                         "bus_ripper": null,
                         "junc": null,
                         "pin": "c5f24f86-e79d-4c72-9172-9c79fc509c5c/f3a0ce45-6d5e-453b-9649-33baf57cc7b7",
+                        "port": null
+                    }
+                },
+                "69a8042e-4c28-45b3-a360-78cbde52aede": {
+                    "from": {
+                        "bus_ripper": null,
+                        "junc": null,
+                        "pin": "5cd44956-605e-483c-b416-4029cc864e4d/c6ad0c6a-6379-43b9-8fe5-11df39fad407",
+                        "port": null
+                    },
+                    "to": {
+                        "bus_ripper": null,
+                        "junc": null,
+                        "pin": "2354bbe5-637f-48e5-b3da-6c1452b72055/2fffaa24-00b6-4f8f-a6c0-f808a499d524",
                         "port": null
                     }
                 },
@@ -4454,6 +4482,26 @@
                     "symbol": "fe02ea66-ada3-450f-af6e-4df473f26656",
                     "texts": []
                 },
+                "2354bbe5-637f-48e5-b3da-6c1452b72055": {
+                    "component": "10a1b378-7f71-46e3-a143-93173826f439",
+                    "custom_value": " ",
+                    "display_all_pads": false,
+                    "display_directions": false,
+                    "expand": 0,
+                    "gate": "0de5f349-f360-44ed-8f13-d76a2a712b17",
+                    "pin_display_mode": "selected_only",
+                    "placement": {
+                        "angle": 16384,
+                        "mirror": false,
+                        "shift": [
+                            130000000,
+                            156250000
+                        ]
+                    },
+                    "smashed": false,
+                    "symbol": "56454ae4-1847-4294-847a-159be05e5c9f",
+                    "texts": []
+                },
                 "243b4ef0-e305-4b39-b29c-f75a6218c318": {
                     "component": "5763d3d7-b8c0-4915-b0ba-de6d446d2db8",
                     "display_all_pads": false,
@@ -4841,6 +4889,26 @@
                         "shift": [
                             172500000,
                             170000000
+                        ]
+                    },
+                    "smashed": false,
+                    "symbol": "56454ae4-1847-4294-847a-159be05e5c9f",
+                    "texts": []
+                },
+                "6e4724f3-135f-4113-8040-1813ef7bb9f2": {
+                    "component": "a465edbb-a3fd-4441-b2c0-18b9f2c6acf3",
+                    "custom_value": " ",
+                    "display_all_pads": false,
+                    "display_directions": false,
+                    "expand": 0,
+                    "gate": "0de5f349-f360-44ed-8f13-d76a2a712b17",
+                    "pin_display_mode": "selected_only",
+                    "placement": {
+                        "angle": 16384,
+                        "mirror": false,
+                        "shift": [
+                            130000000,
+                            158750000
                         ]
                     },
                     "smashed": false,
@@ -6024,6 +6092,23 @@
                     },
                     "size": 1500000,
                     "text": "4mA ->\nbias sense > 4mV\nfor low-end accuracy\navoid Vos issues",
+                    "width": 0
+                },
+                "8445728e-df35-419a-a662-ac6e93a36b40": {
+                    "font": "simplex",
+                    "from_smash": false,
+                    "layer": 0,
+                    "origin": "center",
+                    "placement": {
+                        "angle": 0,
+                        "mirror": false,
+                        "shift": [
+                            58750000,
+                            141250000
+                        ]
+                    },
+                    "size": 1500000,
+                    "text": "TODO: check which capacitors I have\nand which I want to use here",
                     "width": 0
                 },
                 "941be1d4-d21e-4335-bff4-a64b6ee136d1": {
