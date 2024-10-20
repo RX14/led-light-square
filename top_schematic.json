@@ -6219,11 +6219,11 @@
     },
     "title_block_values": {
         "author": "Stephanie Wilde-Hobbs",
-        "date": "2021-12-17",
+        "date": "2024-10-20",
         "license": "CC BY-SA 4.0",
         "project_name": "led-light-square",
-        "project_title": "LED light square",
-        "rev": "1"
+        "project_title": "LED Light Square",
+        "rev": "3"
     },
     "type": "schematic_block",
     "uuid": "d3a8fe28-f6cd-47aa-9448-3074e1b88789",

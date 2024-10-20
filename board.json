@@ -10202,6 +10202,23 @@
             "text": "$RD",
             "width": 150000
         },
+        "d37fdc81-4a11-4369-8845-c18e5d499c63": {
+            "font": "simplex",
+            "from_smash": false,
+            "layer": 20,
+            "origin": "center",
+            "placement": {
+                "angle": 0,
+                "mirror": false,
+                "shift": [
+                    -37625000,
+                    -32000000
+                ]
+            },
+            "size": 1500000,
+            "text": "${project_title}\n${date}\nrev. ${rev}",
+            "width": 200000
+        },
         "e7d0e33e-0a9f-4bbd-a40d-89bc75f145d3": {
             "font": "simplex",
             "from_smash": true,
