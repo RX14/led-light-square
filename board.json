@@ -9767,7 +9767,7 @@
             "hole_solder_mask_expansion": 100000,
             "order": -1,
             "paste_mask_contraction": 0,
-            "solder_mask_expansion": 38000,
+            "solder_mask_expansion": 50000,
             "via_solder_mask_expansion": 100000
         },
         "plane": {},
