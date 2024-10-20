@@ -9770,34 +9770,7 @@
             "solder_mask_expansion": 38000,
             "via_solder_mask_expansion": 100000
         },
-        "plane": {
-            "a6c0b398-d6db-4c78-b388-636223c9b1ed": {
-                "enabled": true,
-                "layer": 10000,
-                "match": {
-                    "mode": "all",
-                    "net": "00000000-0000-0000-0000-000000000000",
-                    "net_class": "c1edc46d-37d5-4748-a471-aa557c0b6e0f",
-                    "net_name_regex": ""
-                },
-                "order": 0,
-                "settings": {
-                    "angle": 0,
-                    "connect_style": "solid",
-                    "fill_style": "solid",
-                    "hatch_border_width": 500000,
-                    "hatch_line_spacing": 500000,
-                    "hatch_line_width": 200000,
-                    "keep_orphans": false,
-                    "min_width": 200000,
-                    "n_spokes": 4,
-                    "style": "round",
-                    "text_style": "expand",
-                    "thermal_gap_width": 200000,
-                    "thermal_spoke_width": 200000
-                }
-            }
-        },
+        "plane": {},
         "shorted_pads": {
             "22c8b31a-8093-48df-a4d4-e57b12083c83": {
                 "enabled": true,
@@ -9834,7 +9807,78 @@
                 "order": 0
             }
         },
-        "thermals": {},
+        "thermals": {
+            "ae6ae7e2-34c5-4daf-b1de-9454b2b22afa": {
+                "angle": 0,
+                "connect_style": "thermal",
+                "enabled": true,
+                "layer": 10000,
+                "match": {
+                    "mode": "all",
+                    "net": "00000000-0000-0000-0000-000000000000",
+                    "net_class": "c1edc46d-37d5-4748-a471-aa557c0b6e0f",
+                    "net_name_regex": ""
+                },
+                "match_component": {
+                    "component": "00000000-0000-0000-0000-000000000000",
+                    "components": [
+                        "04f2d586-2ac1-4701-9b50-ab790a5f1d12",
+                        "06e984a7-40d5-42ec-947c-28478c440555",
+                        "19026ce5-4a8d-416a-a72d-0ac31f4b36a8",
+                        "1a05c4b6-f0c1-4471-9354-66b631baa32a",
+                        "23134745-6391-48ab-93be-39c7ff4686e6",
+                        "24c0cca9-57a4-42e3-ad1b-c29749f83e71",
+                        "277ae950-a641-49d1-8199-a26f2a8ecc21",
+                        "2a3ef178-49b0-4e88-8f8d-60e809bb397e",
+                        "2f8e8ead-aa44-492b-9b70-d5218fcb1464",
+                        "3643c253-72aa-43b6-8773-47cfd0a61e4f",
+                        "3708cec7-b71d-46fd-91fe-3eb929b568bb",
+                        "37fdfbac-0a77-4abf-9c3d-de8b7f35c0bf",
+                        "38dde02a-4163-48d3-9618-bb6bb11d4691",
+                        "3a6de05b-67ce-419a-9d50-13da59c0402b",
+                        "3c43cbad-7894-4058-be7c-762057af05e8",
+                        "3ce62454-8db7-4386-8ce1-4a5ee9729439",
+                        "3d7faaf1-17d3-4b3e-aa01-030570940dc0",
+                        "4c088e40-9b78-4e5b-ab0b-49b026136cab",
+                        "553a68c4-31d1-4f2b-8367-d63053f60ded",
+                        "5763d3d7-b8c0-4915-b0ba-de6d446d2db8",
+                        "5cd86836-a12a-43c5-aa57-a1dd32d2fd1e",
+                        "6239a568-9b2b-4a40-aecc-d3e48868a2c6",
+                        "6715cede-92f9-4e5d-bfe0-0e164edf4957",
+                        "6b4bd103-3198-4fa8-8e17-e912cbe435bc",
+                        "6c22eeb8-7f87-4ca3-8f53-81d204db8606",
+                        "70f23a24-2b0d-43b2-a654-ba2504254bd4",
+                        "757a624c-4730-4613-b2e5-08f3b328c401",
+                        "81a56f65-571c-41ba-9136-be1563f79b8e",
+                        "82665690-1f46-4765-b36b-25ad503b7fc3",
+                        "8288a43d-0e8a-439b-96fa-2200d03d26d7",
+                        "878bd646-3d54-4a86-9dd9-ef723ad8162d",
+                        "92e40612-6feb-40d2-8000-9d729bf323fc",
+                        "94e30b21-84c1-4dac-8b29-db89cd9e0171",
+                        "a03a1551-6101-4d61-98cb-ea8d6eb9f6e0",
+                        "ae7aabbb-1e28-4022-b7cf-9ac959cd36fa",
+                        "b1899aff-3e6c-4b16-949f-f95044621ef1",
+                        "baca0ddb-7243-461a-91b4-730cb888f4ff",
+                        "c070bcb4-d3e2-4cd1-ba51-46a658c2856c",
+                        "cac1ba30-e695-4d55-9ca3-b65ee18b2637",
+                        "d571d16a-3dca-437b-9ff3-2d21a80de35e",
+                        "db2541f9-b5e9-4cd2-b33f-97f1fa82e41b",
+                        "e0be581a-e05d-44f4-b4c7-f35d51bdb172",
+                        "e57af95a-102e-4b41-b6d6-826672c814ca",
+                        "faa0f4bb-1837-4f0f-85a9-45fe4ac0a819",
+                        "fb03c91a-ab3a-4b85-95b6-ee05420e810a"
+                    ],
+                    "mode": "components",
+                    "part": "00000000-0000-0000-0000-000000000000"
+                },
+                "n_spokes": 4,
+                "order": 0,
+                "pad_mode": "all",
+                "pads": [],
+                "thermal_gap_width": 200000,
+                "thermal_spoke_width": 200000
+            }
+        },
         "track_width": {
             "4f638201-bdfa-4423-bd84-c11d2d33500e": {
                 "enabled": true,
