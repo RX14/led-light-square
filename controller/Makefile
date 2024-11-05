@@ -1,14 +1,13 @@
 O = out
-CRYSTAL_SVD ?= crystal-svd
-CRYSTAL_KECIL ?=
-
+CRYSTAL_SVD ?= bin/crystal-svd
+CRYSTAL_KECIL ?= lib/kecil/src
 .PHONY: all
 all: $(O)/main.elf
 
-src/bindings/*.cr: src/bindings/rp2040.svd $(CRYSTAL_SVD)
+src/bindings/*.cr: src/bindings/rp2040.svd $(CRYSTAL_SVD) lib
 	$(CRYSTAL_SVD) src/bindings/rp2040.svd
 
-$(O)/main.o: src/main.cr src/bindings/*.cr
+$(O)/main.o: src/main.cr src/bindings/*.cr lib
 	mkdir -p $(O)
 	CRYSTAL_PATH=lib:$(CRYSTAL_KECIL) crystal build --release --cross-compile --target arm-none-eabi --mcpu cortex-m0plus -o "$@" "$<" > /dev/null
 
@@ -23,6 +22,11 @@ $(O)/pico-boot-stage2.o: boot/pico-boot-stage2.S boot/rp2040-boot-stage2.S
 
 tools/stage2-checksum: tools/stage2-checksum.cr
 	crystal build -o "$@" "$<"
+
+lib: shard.yml shard.lock
+	shards
+
+bin/crystal-svd: lib
 
 .PHONY: clean
 clean:

@@ -1,0 +1,10 @@
+version: 2.0
+shards:
+  kecil:
+    git: https://github.com/rx14/kecil.cr.git
+    version: 0.1.0+git.commit.47ec55d2e800ebeb0da5b161f5dd6d482a70dd5e
+
+  svd:
+    git: https://github.com/rx14/svd.cr.git
+    version: 0.1.0+git.commit.204c062ae09d8b3be977cfd1626bbab73ceaa2a2
+
