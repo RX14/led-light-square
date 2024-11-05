@@ -1,13 +1,16 @@
 O = out
 CRYSTAL_SVD ?= bin/crystal-svd
 CRYSTAL_KECIL ?= lib/kecil/src
+
+SOURCES := $(shell find src -name '*.cr')
+
 .PHONY: all
 all: $(O)/main.elf
 
 src/bindings/*.cr: src/bindings/rp2040.svd $(CRYSTAL_SVD) lib
 	$(CRYSTAL_SVD) src/bindings/rp2040.svd
 
-$(O)/main.o: src/main.cr src/bindings/*.cr lib
+$(O)/main.o: src/main.cr $(SOURCES) src/bindings/*.cr lib
 	mkdir -p $(O)
 	CRYSTAL_PATH=lib:$(CRYSTAL_KECIL) crystal build --release --cross-compile --target arm-none-eabi --mcpu cortex-m0plus -o "$@" "$<" > /dev/null
 
