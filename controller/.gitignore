@@ -3,3 +3,4 @@
 /src/bindings/*.cr
 /lib/
 /bin/
+/shard.override.yml
