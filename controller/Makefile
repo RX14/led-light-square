@@ -14,13 +14,13 @@ $(O)/main.o: src/main.cr src/bindings/*.cr lib
 $(O)/main.prechecksum.elf: $(O)/main.o $(O)/pico-boot-stage2.o
 	ld.lld --emit-relocs --gc-sections -T boot/rp2040.ld --defsym=__flash_size=2048K -o "$@" $^
 
-$(O)/main.elf: $(O)/main.prechecksum.elf tools/stage2-checksum
-	tools/stage2-checksum "$<" "$@"
+$(O)/main.elf: $(O)/main.prechecksum.elf bin/stage2-checksum
+	bin/stage2-checksum "$<" "$@"
 
 $(O)/pico-boot-stage2.o: boot/pico-boot-stage2.S boot/rp2040-boot-stage2.S
 	clang --target=arm-none-eabi -mcpu=cortex-m0plus -c -o "$@" "$<"
 
-tools/stage2-checksum: tools/stage2-checksum.cr
+bin/stage2-checksum: tools/stage2-checksum.cr
 	crystal build -o "$@" "$<"
 
 lib: shard.yml shard.lock
@@ -34,4 +34,4 @@ clean:
 
 .PHONY: clean-tools
 clean-tools:
-	rm -f tools/stage2-checksum
+	rm -f bin/stage2-checksum

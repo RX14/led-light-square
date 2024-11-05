@@ -1,5 +1,4 @@
 /out/
-/tools/stage2-checksum
 /src/bindings/*.cr
 /lib/
 /bin/
