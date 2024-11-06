@@ -1,16 +1,4 @@
-module RP2040
-  # Pass `{subsystem: true}` to take out of reset.
-  def self.unreset_and_wait(**args)
-    # RESET.set(subsystem: false) takes a system out of reset
-    RESETS::RESET.set(**args.transform_values { |v| !v })
-
-    # Make a mask from the subsystems we are operating on
-    reset_mask = RESETS::RESET.new(0).copy_with(**args).to_int
-
-    until RESETS::RESET_DONE.value.to_int.bits_set? reset_mask
-    end
-  end
-
+module RP2040::Bootup
   def self.init_resets
     # Reset all peripherals, except...
     all_resets = RESETS::RESET.reset_value
@@ -28,7 +16,7 @@ module RP2040
 
     # Remove resets from all peripherals which can only be clocked by clk_sys and
     # clk_ref.
-    unreset_and_wait(
+    Resets.unreset(
       timer: true,
       tbman: true,
       sysinfo: true,
@@ -48,5 +36,30 @@ module RP2040
       dma: true,
       busctrl: true,
     )
+  end
+
+  def self.init_clocks
+    # Disable resus, in case it was left on before reset
+    CLOCKS::CLK_SYS_RESUS_CTRL.enable = false
+
+    # TODO: non-default XOSC startup delay
+
+    XOSC::CTRL.set(enable: :enable, freq_range: :val_1_15MHZ)
+    until XOSC::STATUS.stable
+    end
+
+    # Select known-good sources for CLK_SYS and CLK_REF, in case they are selecting
+    # PLLs we are about to configure.
+    ClockGenerator::CLK_SYS.switch_to(src: :clk_ref)
+    ClockGenerator::CLK_REF.switch_to(src: :xosc_clksrc)
+
+    # Configure CPU clock
+    PLL::SYS.configure
+    ClockGenerator::CLK_SYS.switch_to(aux_src: :clksrc_pll_sys)
+  end
+
+  def self.init
+    init_resets
+    init_clocks
   end
 end
