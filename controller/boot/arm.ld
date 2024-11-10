@@ -1,4 +1,3 @@
-
 /* Unused, but here to silence a linker warning. */
 ENTRY(main)
 
@@ -16,11 +15,6 @@ SECTIONS
         . = ALIGN(4);
     } >FLASH_TEXT
 
-    .tinygo_stacksizes :
-    {
-        *(.tinygo_stacksizes)
-    } > FLASH_TEXT
-
     /* Put the stack at the bottom of RAM, so that the application will
      * crash on stack overflow instead of silently corrupting memory.
      * See: http://blog.japaric.io/stack-overflow-protection/ */
@@ -28,35 +22,35 @@ SECTIONS
     {
         . = ALIGN(4);
         . += _stack_size;
-        _stack_top = .;
+        __initial_stack_top = .;
     } >RAM
 
     /* Start address (in flash) of .data, used by startup code. */
-    _sidata = LOADADDR(.data);
+    __section_data_flashaddr = LOADADDR(.data);
 
     /* Globals with initial value */
     .data :
     {
         . = ALIGN(4);
-        _sdata = .;        /* used by startup code */
+        __section_data_start = .;        /* used by startup code */
         *(.data)
         *(.data.*)
         . = ALIGN(4);
         *(.ramfuncs*)      /* Functions that must execute from RAM */
         . = ALIGN(4);
-        _edata = .;        /* used by startup code */
+        __section_data_end = .;        /* used by startup code */
     } >RAM AT>FLASH_TEXT
 
     /* Zero-initialized globals  */
     .bss :
     {
         . = ALIGN(4);
-        _sbss = .;         /* used by startup code */
+        __section_bss_start = .;         /* used by startup code */
         *(.bss)
         *(.bss.*)
         *(COMMON)
         . = ALIGN(4);
-        _ebss = .;         /* used by startup code */
+        __section_bss_end = .;         /* used by startup code */
     } >RAM
 
     /DISCARD/ :
@@ -67,11 +61,9 @@ SECTIONS
 }
 
 /* For the memory allocator. */
-_heap_start = _ebss;
-_heap_end = ORIGIN(RAM) + LENGTH(RAM);
-_globals_start = _sdata;
-_globals_end = _ebss;
+__heap_start = __section_bss_end;
+__heap_end = ORIGIN(RAM) + LENGTH(RAM);
 
 /* For the flash API */
-__flash_data_start = LOADADDR(.data) + SIZEOF(.data);
-__flash_data_end = ORIGIN(FLASH_TEXT) + LENGTH(FLASH_TEXT);
+__flash_writable_start = LOADADDR(.data) + SIZEOF(.data);
+__flash_writable_end = ORIGIN(FLASH_TEXT) + LENGTH(FLASH_TEXT);

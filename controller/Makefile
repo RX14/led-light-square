@@ -1,4 +1,5 @@
 O = out
+CRYSTAL ?= crystal
 CRYSTAL_SVD ?= bin/crystal-svd
 CRYSTAL_KECIL ?= lib/kecil/src
 
@@ -12,7 +13,7 @@ src/bindings/*.cr: src/bindings/rp2040.svd $(CRYSTAL_SVD) lib
 
 $(O)/main.o: src/main.cr $(SOURCES) src/bindings/*.cr lib
 	mkdir -p $(O)
-	CRYSTAL_PATH=lib:$(CRYSTAL_KECIL) crystal build --release --cross-compile --target arm-none-eabi --mcpu cortex-m0plus -o "$@" "$<" > /dev/null
+	CRYSTAL_PATH=lib:$(CRYSTAL_KECIL) $(CRYSTAL) build --cross-compile --target arm-none-eabi --mcpu cortex-m0plus -o "$@" "$<" > /dev/null
 
 $(O)/main.prechecksum.elf: $(O)/main.o $(O)/pico-boot-stage2.o
 	ld.lld --emit-relocs --gc-sections -T boot/rp2040.ld --defsym=__flash_size=2048K -o "$@" $^
