@@ -1,0 +1,13 @@
+name: firmware
+version: 0.1.0
+
+authors:
+  - Stephanie Wilde-Hobbs <git@stephanie.is>
+
+dependencies:
+  kecil:
+    github: RX14/kecil.cr
+  svd:
+    github: RX14/svd.cr
+
+license: Apache-2.0

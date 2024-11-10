@@ -1,2 +1,6 @@
-main.X
-*.elf
+/out/
+/src/bindings/*.cr
+/lib/
+/bin/
+/shard.override.yml
+/docs/
