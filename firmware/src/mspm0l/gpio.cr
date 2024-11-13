@@ -1,4 +1,4 @@
-struct MSPM0L::GPIO
+module MSPM0L::GPIO
   def self.peripheral_power=(enable : Bool) : Bool
     MSPM0L.peripheral_set_power(GPIOA::GPRCM0, enable)
   end
@@ -11,45 +11,61 @@ struct MSPM0L::GPIO
     GPIO.new(num)
   end
 
-  def initialize(@num : UInt32)
-  end
-
-  protected def ensure_power : Nil
-    unless GPIO.peripheral_power
-      GPIO.peripheral_power = true
-    end
-  end
-
   enum Direction
     Input
     Output
   end
 
-  def direction : Direction
-    ensure_power
+  module Impl
+    abstract def gpio_num : Int32
 
-    GPIOA::DOE31_0.value.to_int.bit?(@num)
-  end
+    def direction : Direction
+      MSPM0L.ensure_power(GPIOA::GPRCM0)
 
-  def output! : Output
-    ensure_power
-
-    GPIOA::DOESET31_0.value = GPIOA::DOESET31_0.new(1_u32 << @num)
-    Output.new(@num)
-  end
-
-  struct Output
-    def initialize(@num : UInt32)
+      GPIOA::DOE31_0.value.to_int.bit?(gpio_num)
     end
 
-    def high=(state : Bool) : Bool
-      if state
-        GPIOA::DOUTSET31_0.value = GPIOA::DOUTSET31_0.new(1_u32 << @num)
-      else
-        GPIOA::DOUTCLR31_0.value = GPIOA::DOUTCLR31_0.new(1_u32 << @num)
+    def output! : Output
+      MSPM0L.ensure_power(GPIOA::GPRCM0)
+
+      GPIOA::DOESET31_0.value = GPIOA::DOESET31_0.new(1_u32 << gpio_num)
+      Output.new(gpio_num)
+    end
+
+    module Output
+      abstract def gpio_num : Int32
+
+      def high=(state : Bool) : Bool
+        if state
+          GPIOA::DOUTSET31_0.value = GPIOA::DOUTSET31_0.new(1_u32 << gpio_num)
+        else
+          GPIOA::DOUTCLR31_0.value = GPIOA::DOUTCLR31_0.new(1_u32 << gpio_num)
+        end
+
+        state
+      end
+    end
+  end
+
+  {% for i in 0..31 %}
+    module GPIO{{i}}
+      extend Impl
+
+      def self.gpio_num : Int32
+        {{i}}
       end
 
-      state
+      module Output
+        extend Impl::Output
+
+        def self.gpio_num : Int32
+          {{i}}
+        end
+
+        def self.new(gpio_num : Int32) : Output
+          Output
+        end
+      end
     end
-  end
+  {% end %}
 end
