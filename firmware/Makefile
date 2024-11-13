@@ -18,7 +18,7 @@ src/bindings/*.cr: src/bindings/mspm0l130x.svd $(CRYSTAL_SVD) lib
 
 $(O)/main.o: src/main.cr $(SOURCES) src/bindings/*.cr lib
 	mkdir -p $(O)
-	CRYSTAL_PATH=lib:$(CRYSTAL_KECIL) $(CRYSTAL) build --release --cross-compile --target arm-none-eabi --mcpu cortex-m0plus -o "$@" "$<" > /dev/null
+	CRYSTAL_PATH=lib:$(CRYSTAL_KECIL) $(CRYSTAL) build --cross-compile --target arm-none-eabi --mcpu cortex-m0plus -o "$@" "$<" > /dev/null
 
 $(O)/vector_table.o: boot/vector_table.S
 	clang --target=arm-none-eabi -mcpu=cortex-m0plus -c -o "$@" "$<"
