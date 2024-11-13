@@ -36,6 +36,28 @@ MSPM0L::Timer::G0::CC1.compare_up_pin_action = :set_low
 
 MSPM0L::Timer::G0.count_enable = true
 
+MSPM0L::Opamp0.set(
+  gain_bandwidth: :high,
+  rri: true,
+  noninverting_source: :pin0,
+  inverting_source: :pin0,
+  enable: true
+)
+
+MSPM0L::Opamp1.set(
+  gain_bandwidth: :high,
+  rri: true,
+  noninverting_source: :pin0,
+  inverting_source: :pin0,
+  enable: true
+)
+
+until MSPM0L::Opamp0.ready? && MSPM0L::Opamp1.ready?
+end
+
+MSPM0L::Opamp0.set(output_pin_enabled: true)
+MSPM0L::Opamp1.set(output_pin_enabled: true)
+
 while true
 end
 
